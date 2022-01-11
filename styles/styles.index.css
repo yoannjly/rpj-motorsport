@@ -1,0 +1,385 @@
+html{
+    height: 100%;
+    overflow:visible;
+}
+
+body{
+    font-family: Verdana, Calibri , sans-serif;
+    margin: 0px;
+    padding: 0px;
+    margin:auto;
+    min-width: 640px;
+}
+.logo_wrap{
+    float: left;
+    width: 200px;
+}
+
+nav{
+    font-family: 'Urbanist', sans-serif;
+    width:100%;
+    background-color: #1E1F22;
+    position: fixed;
+    z-index: 14000;
+}
+/*menuresponsive*/
+nav label{
+    display: none;
+}
+nav input[type=checkbox]{
+    display: none;
+}
+
+nav li:hover .sous_menu{ /*.sous menu apres li hover qui permet de réafficher les sous menu avec un display inline block au parent*/
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 4000;
+}
+
+@media screen and (max-width:1200px) {
+    .menu_mobile{
+        display: block;
+        color: white;
+        background-color: #1E1F22;
+        text-align: end;
+        margin-right:15px;
+        padding: 15px 0px;
+        font-size:20px;
+        }
+    nav ul{
+        display: none;
+    }
+    nav>ul>li{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .sous_menu{
+        display: none;
+    }
+    nav li:hover .sous_menu{ /*.sous menu apres li hover qui permet de réafficher les sous menu avec un display inline block au parent*/
+        display: none;
+    }
+    footer{
+        display: block;
+    }
+} 
+
+.menu_mobile:hover{
+    text-decoration: underline;
+}
+nav input[type=checkbox]:checked ~ul{
+    display: block;
+}
+nav>ul{
+    margin: 0px;
+    padding:0px;
+}
+
+nav>ul>li{
+    float:left;
+    position: relative;
+}
+
+nav>ul>li>a{
+    padding: 25px 30px;
+    color: white;
+    font-size: 15px;
+}
+
+nav>ul>li:hover a {
+    padding: 20px 30px 25px 30px;
+}
+nav>ul::after{/*clear css pour éviter d'avoir les éléments flotant qui passe sur les éléments parent*/
+    content: "";
+    display: block;
+    clear: both;
+}
+nav li{
+    list-style-type: none;
+
+}
+.sous_menu{
+    display: none;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+
+.sous_menu li{
+    border-bottom: 1px solid black;
+}
+.sous_menu li a{
+    padding: 15px 30px;
+    font-size: 17px;
+    color: white;
+    width: 200px;
+    background-color: #1E1F22;
+}
+.sous_menu li:hover a {
+    background-color:#F55139 ;
+}
+.accueil:hover{
+    background-color: rgba(245,81,57,0.70);
+    border-top: 5px solid white ;
+    transition-duration: 0.5s;
+}
+
+/*.accueil:hover a{
+    color:black
+}*/
+
+.Moto_club:hover{
+    background-color:#F55139;
+    border-top: white 5px solid;
+    transition-duration: 0.5s;
+    
+}
+
+.Nos_prestations:hover{
+    background: #F55139;
+    border-top: 5px solid white;
+    transition-duration: 0.5s;
+}
+
+/* .Carte_cadeau:hover{
+    background-color:#F55139 ;
+    border-top: white 5px solid ;
+    transition-duration: 0.5s;
+} */
+
+.Calendrier:hover{
+    background-color: #F55139;
+    border-top: white 5px solid ;
+    transition-duration: 0.5s;
+}
+.A_propos:hover{
+    background-color:#F55139 ;
+    border-top: white 5px solid;
+    transition-duration: 0.5s;
+}
+.connexions:hover{
+    background-color: #F55139;
+    border-top: white 5px solid ;
+    transition-duration: 0.5s ;
+}
+
+
+
+.sous_menu li:hover{
+    background-color:#F55139 ;
+}
+
+/*header*/
+
+.banniere{
+    background-color: #1E1F22;
+}
+#banniere{
+    width: 100%;
+}
+
+
+/*main*/
+/*debut de la premiere  et de la troisieme section*/
+
+.premier_troisieme{
+    background-color:#1E1F22;
+    width: 100%;
+    min-height: 500px;
+    text-align: center;
+}
+
+
+.menu_glissant{
+    margin: 25px;
+    max-width: 640px;
+    float: left;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.images{
+    display: flex;
+    animation-duration: 20s;
+    animation-name: mesImages;
+    animation-iteration-count: infinite;
+    z-index: 110;
+}
+
+@keyframes mesImages{
+    0%{
+        transform: translateX(0%);
+    }
+    33%{
+        transform: translateX(-100%);
+    }
+    66%{
+        transform: translateX(-200%);
+    }
+    99%{
+        transform: translateX(-0%);
+    }
+}
+
+.premier_troisieme{
+    display: block;
+    color: white;
+}
+
+.premier_troisieme h2{
+    text-align: center;
+}
+
+.premier_troisieme h2>p{
+    text-align: center;
+    padding: 25px;
+}
+
+.premier_troisieme ul li{
+    background-color: white;
+    padding: 25px;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.premier_troisieme ul li a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+.premier_troisieme ul li:hover{
+    background-color: #F55139;
+    transition-duration: 0.5s;
+}
+.premier_troisieme ul li:hover a {
+    color: white;
+}
+
+.premier_troisieme #reprise{
+    float: left;
+    margin: 25px;
+    border-radius: 5px;
+}
+
+.premier_troisieme ul{
+    margin: 0px;
+}
+
+.texte{
+    display: block;
+}
+
+
+.decouverte{
+    display: inline-block;
+    padding: 25px;
+}
+
+.decouverte li>a{
+    padding: 25px;
+    text-decoration: none;
+    color: white;
+
+}
+h2{
+    margin: 0px;
+    padding: 75px 0px 75px 0px;
+}
+/*fin de la premiere ert troisieme section section */
+/*debut de la deuxieme section*/
+
+.premier_troisieme #securite{
+    margin: 30px;
+    float: right ;
+    border-radius: 8px;
+    width: 700px;
+    max-height: 575px;
+}
+
+.premier_troisieme:nth-child(2){
+    background-color: white;
+    color: black;
+}
+
+.premier_troisieme:nth-child(2) li{
+    background-color: black;
+}
+.premier_troisieme:nth-child(2) a{
+    color: white;
+}
+
+/*fin section deux*/
+/*debut section trois*/
+
+
+
+#troisieme li {
+    width: 250px;
+}
+
+/*footer*/
+footer{
+    background-color: black;
+    color: white;
+    width: 100%;
+    min-height:275px;
+}
+footer hr{
+    color: white;
+    background-color: white;
+    height: 3px;
+    border-radius: 5px  5px 5px 5px ;
+    width: 80px;
+    margin-left: 0px;
+    margin-top:5px ;
+}
+
+footer img{
+    width:300px;
+    padding: 15px;
+    float: left;
+}
+footer h3{
+    margin-bottom: 3px;
+}
+
+footer p{
+    margin: 3px;
+    font-size: 11px;
+}
+
+footer div{
+    padding:15px;
+    float: left;
+    background-color: black;
+}
+
+footer div p>a{
+    text-decoration: none;
+    color:white;
+    font-size: 11px;
+}
+footer div p>a:hover{
+    color: #F55139;
+    text-decoration: underline;
+    transition-duration: 0.4s;
+}
+
+h2{
+    font-family: 'Urbanist', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+section p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+}
