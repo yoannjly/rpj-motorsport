@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Formulaire de connexion en HTML & CSS - Frenchcoder</title>
-    <link rel="stylesheet" href="styles/styles_connexions.css">
+    <link rel="stylesheet" href="styles/styles_contact.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="icon" type="image/jpg" href="images/logo_footer.png">
 </head>
@@ -30,10 +30,10 @@
                     <li><a href="">JOURNEE DE SENSIBILISATION</a></li>
                 </ul></li>
                 <li class="Calendrier"><a href="">CALENDRIER</a></li>
-                <li class="A_propos"><a href="">CONNEXION</a>
+                <li class="A_propos"><a href="inscription.html">CONNEXION</a>
                 <ul class="sous_menu">
-                    <li><a href="">SE CONNECTER</a></li>
-                    <li><a href="">INSCRIPTION</a></li>
+                    <li><a href="inscription.html">SE CONNECTER</a></li>
+                    <li><a href="inscription.html">INSCRIPTION</a></li>
                 </ul></li>
                 <li class="connexions"><a href="Contact.html">CONTACT</a></li>
             </ul>
@@ -41,26 +41,34 @@
     </header>
     <div class="formulaire">
         <form>
-            <h1>SE CONNECTER</h1>
+            <h1>NOUS CONTACTER</h1>
             <div class="social-media">
                 <p><i class="fab fa-google"></i></p>
                 <p><i class="fab fa-youtube"></i></p>
                 <p><i class="fab fa-facebook-f"></i></p>
                 <p><i class="fab fa-twitter"></i></p>
             </div>
-            <p class="choose-email">Veuillez entrer vos identifiant de connexion :</p>
+            <p class="choose-email">Entrer vos informations  et le motif du contact si dessous  :</p>
         
             <div class="inputs">
-                <label for="email">Votre email:</label>
-                <input type="email" placeholder="RPJTOTO@gmail.com" />
-                <label for="password">Mot de passe :</label>
-                <input type="password" placeholder="Mot de passe ">
+                <label for="email">email : </label>
+                <input type="email" name="email" id="email" placeholder="RPJ.motorsport@gmail.com">
+                <label for="nom">Nom :</label>
+                <input type="text" name=""prenom placeholder="Nom de famille" />
+                <label for="prenom">Prénom :</label>
+                <input type="text" name="prenom" placeholder="1er prenom">
+                <label for="phone">Telephone :</label>
+                <input type="tel" name="phone" placeholder="+33">
+                <label for="motif" >Motif :</label>
+                <textarea name="motif" id="motif" cols="10" rows="10"></textarea>
             </div>
-        <p>Si vous ne posséder pas de compte cliquer <a href="">ici</a> pour vous inscrire</p>
             <div class="bouton">
                 <button type="submit">VALIDER</button>
             </div>
             </form>
+    </div>
+    <div class="coordonnées">
+
     </div>
     <footer>
         <div class="all-footer">
@@ -71,8 +79,7 @@
                         <p><a href="">Accueil</a></p>
                         <p><a href="">Moto_club</a></p>
                         <p><a href="">Nos Prestations</a></p>
-                        <p><a href="">Carte cadeau</a>
-                        </p>
+                        <p><a href="">Carte cadeau</a></p>
                         <p><a href="">Calendrier</a></p>
                         <p><a href="">A propos</a></p>
                         <p><a href="">Inscription
