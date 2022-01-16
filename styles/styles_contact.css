@@ -1,0 +1,379 @@
+html {
+    height: 100%;
+    overflow: visible;
+}
+
+body {
+    font-family: Verdana, Calibri, sans-serif;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    min-width: 640px;
+    background-color: #f5f5f5;
+}
+
+.logo_wrap {
+    float: left;
+    width: 200px;
+}
+
+nav > a {
+    float: left;
+}
+
+nav {
+    font-family: 'Urbanist', sans-serif;
+    width: 100%;
+    background-color: black;
+    z-index: 14000;
+}
+
+/*menuresponsive*/
+nav label {
+    display: none;
+}
+
+nav input[type=checkbox] {
+    display: none;
+}
+
+nav li:hover .sous_menu { /*.sous menu apres li hover qui permet de réafficher les sous menu avec un display inline block au parent*/
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    z-index: 4000;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .menu_mobile {
+        display: block;
+        color: white;
+        background-color: #1E1F22;
+        text-align: end;
+        margin-right: 15px;
+        padding: 15px 0px;
+        font-size: 20px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav > ul > li {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .sous_menu {
+        display: none;
+    }
+
+    nav li:hover .sous_menu { /*.sous menu apres li hover qui permet de réafficher les sous menu avec un display inline block au parent*/
+        display: none;
+    }
+
+    footer {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .menu_glissant {
+        width: 100%;
+    }
+}
+
+
+.menu_mobile:hover {
+    text-decoration: underline;
+}
+
+nav input[type=checkbox]:checked ~ ul {
+    display: block;
+}
+
+nav > ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul > li {
+    float: left;
+    position: relative;
+}
+
+nav > ul > li > a {
+    padding: 25px 30px;
+    color: white;
+    font-size: 15px;
+}
+
+nav > ul > li:hover a {
+    padding: 20px 30px 25px 30px;
+}
+
+nav > ul::after { /*clear css pour éviter d'avoir les éléments flotant qui passe sur les éléments parent*/
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav li {
+    list-style-type: none;
+
+}
+
+.sous_menu {
+    display: none;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+.sous_menu li {
+    border-bottom: 1px solid black;
+}
+
+.sous_menu li a {
+    padding: 15px 30px;
+    font-size: 17px;
+    color: white;
+    width: 200px;
+    background-color: #1E1F22;
+}
+
+.sous_menu li:hover a {
+    background-color: #F55139;
+}
+
+.accueil:hover {
+    background-color: rgba(245, 81, 57, 0.70);
+    border-top: 5px solid white;
+    transition-duration: 0.5s;
+}
+
+/*.accueil:hover a{
+    color:black
+}*/
+
+.Moto_club:hover {
+    background-color: #F55139;
+    border-top: white 5px solid;
+    transition-duration: 0.5s;
+
+}
+
+.Nos_prestations:hover {
+    background: #F55139;
+    border-top: 5px solid white;
+    transition-duration: 0.5s;
+}
+
+/* .Carte_cadeau:hover{
+    background-color:#F55139 ;
+    border-top: white 5px solid ;
+    transition-duration: 0.5s;
+} */
+
+.Calendrier:hover {
+    background-color: #F55139;
+    border-top: white 5px solid;
+    transition-duration: 0.5s;
+}
+
+.A_propos:hover {
+    background-color: #F55139;
+    border-top: white 5px solid;
+    transition-duration: 0.5s;
+}
+
+.connexions:hover {
+    background-color: #F55139;
+    border-top: white 5px solid;
+    transition-duration: 0.5s;
+}
+
+
+.sous_menu li:hover {
+    background-color: #F55139;
+}
+
+.formulaire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+form {
+    margin: 50px 0 75px 0;
+    background-color: #fff;
+    padding: 40px 60px;
+    border-radius: 10px;
+    min-width: 300px;
+    width: 800px;
+}
+
+form h1 {
+    color: #f55139;
+    text-align: center;
+}
+
+form .social-media {
+    margin-top: -10px;
+    display: flex;
+    justify-content: center;
+}
+
+form .social-media p {
+    padding: 5px;
+    width: 20px;
+    margin-left: 10px;
+    border-radius: 100%;
+    border: 1px solid #545454;
+    text-align: center;
+    cursor: pointer;
+    color: #545454;
+}
+
+
+form .social-media p:hover {
+    color: #F55139;
+    border-color: #F55139;
+}
+
+form p.choose-email {
+    text-align: center;
+}
+
+form .inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+form .inputs input {
+    padding: 17px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+
+textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    outline: none;
+    margin-bottom: 15px;
+    height: 80px;
+}
+
+form p.inscription {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #878787;
+}
+
+form .inscription a {
+    text-decoration: none;
+    color: #F55139;
+}
+
+form button {
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    color: #fff;
+    background-color: #1E1F22;
+    outline: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #F55139;
+    transition-duration: 0.5s;
+}
+
+form a {
+    text-decoration: none;
+}
+
+form a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #F55139;
+}
+
+.bouton {
+    align-items: center;
+    text-align: center;
+}
+
+
+/*footer*/
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    min-height: 275px;
+    display: flex;
+    align-items: center;
+}
+
+footer hr {
+    color: white;
+    background-color: white;
+    height: 3px;
+    border-radius: 5px 5px 5px 5px;
+    width: 80px;
+    margin-left: 0;
+    margin-top: 5px;
+}
+
+footer img {
+    width: 300px;
+    padding: 15px;
+    float: left;
+}
+
+footer h3 {
+    margin-bottom: 3px;
+}
+
+footer p {
+    margin: 3px;
+    font-size: 11px;
+}
+
+footer div {
+    padding: 15px;
+    float: left;
+    background-color: black;
+}
+
+footer div p > a {
+    text-decoration: none;
+    color: white;
+    font-size: 11px;
+}
+
+footer div p > a:hover {
+    color: #F55139;
+    text-decoration: underline;
+    transition-duration: 0.4s;
+}
+
+h2 {
+    font-family: 'Urbanist', sans-serif;
+}
