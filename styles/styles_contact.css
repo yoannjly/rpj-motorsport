@@ -5,7 +5,6 @@ html {
 
 body {
     font-family: Verdana, Calibri, sans-serif;
-    margin: 0;
     padding: 0;
     margin: auto;
     min-width: 640px;
@@ -54,7 +53,7 @@ nav li:hover .sous_menu { /*.sous menu apres li hover qui permet de réafficher 
         background-color: #1E1F22;
         text-align: end;
         margin-right: 15px;
-        padding: 15px 0px;
+        padding: 15px 0;
         font-size: 20px;
     }
 
