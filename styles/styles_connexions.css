@@ -9,6 +9,7 @@ body{
     padding: 0px;
     margin:auto;
     min-width: 640px;
+    background-color: #f5f5f5;
 }
 .logo_wrap{
     float: left;
@@ -23,7 +24,6 @@ nav{
     font-family: 'Urbanist', sans-serif;
     width:100%;
     background-color: black;
-    position: fixed;
     z-index: 14000;
 }
 /*menuresponsive*/
@@ -48,7 +48,7 @@ nav li:hover .sous_menu{ /*.sous menu apres li hover qui permet de réafficher l
     .menu_mobile{
         display: block;
         color: white;
-        background-color: black;
+        background-color: #1E1F22;
         text-align: end;
         margin-right:15px;
         padding: 15px 0px;
@@ -73,15 +73,10 @@ nav li:hover .sous_menu{ /*.sous menu apres li hover qui permet de réafficher l
     }
 }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width:700px) {
     .menu_glissant{
         width: 100%;
-        display: none;
     }
-    #securite{
-        width: 400px;
-    }
-
 }
 
 
@@ -139,7 +134,7 @@ nav a {
     font-size: 17px;
     color: white;
     width: 200px;
-    background-color: black;
+    background-color: #1E1F22;
 }
 .sous_menu li:hover a {
     background-color:#F55139 ;
@@ -150,6 +145,9 @@ nav a {
     transition-duration: 0.5s;
 }
 
+/*.accueil:hover a{
+    color:black
+}*/
 
 .Moto_club:hover{
     background-color:#F55139;
@@ -163,6 +161,12 @@ nav a {
     border-top: 5px solid white;
     transition-duration: 0.5s;
 }
+
+/* .Carte_cadeau:hover{
+    background-color:#F55139 ;
+    border-top: white 5px solid ;
+    transition-duration: 0.5s;
+} */
 
 .Calendrier:hover{
     background-color: #F55139;
@@ -186,165 +190,110 @@ nav a {
     background-color:#F55139 ;
 }
 
-/*header*/
-
-.banniere{
-    background-color: black;
-}
-#banniere{
-    width: 100%;
-}
-
-
-/*main*/
-/*debut de la premiere  et de la troisieme section*/
-
-.premier_troisieme{
-    background-color:#1E1F22;
-    width: 100%;
-    min-height: 500px;
-    text-align: center;
-}
-
-#securite{
-    width: 50px;
-}
-.menu_glissant{
-    margin: 25px;
-    max-width: 640px;
-    float: left;
-    overflow: hidden;
-    border-radius: 8px;
-}
-
-.images{
+.formulaire{
     display: flex;
-    width: 100%;
-    animation-duration: 20s;
-    animation-name: mesImages;
-    animation-iteration-count: infinite;
-    z-index: 110;
+    justify-content: center;
+    align-items: center;
+
 }
 
-@keyframes mesImages{
-    0%{
-        transform: translateX(0%);
-    }
-    33%{
-        transform: translateX(-100%);
-    }
-    66%{
-        transform: translateX(-200%);
-    }
-    99%{
-        transform: translateX(-0%);
-    }
+form {
+    margin: 50px 0px 75px 0px;
+    background-color: #fff;
+    padding: 40px 60px;
+    border-radius: 10px;
+    min-width: 300px;
 }
-
-.premier_troisieme{
-    display: block;
-    color: white;
+form h1{
+    color: #f55139;
+    text-align:center;
 }
-
-.premier_troisieme h2{
+form .social-media{
+    margin-top: -10px;
+    display: flex;
+    justify-content:center;
+}
+form .social-media p{
+    padding: 5px;
+    width: 20px;
+    margin-left: 10px;
+    border-radius: 100%;
+    border: 1px solid #545454;
     text-align: center;
+    cursor:pointer;
+    color: #545454;
 }
 
-.premier_troisieme h2>p{
-    text-align: center;
-    padding: 25px;
+form .social-media p:hover{
+    color: #F55139;
+    border-color: #F55139;
 }
-
-.premier_troisieme ul li{
-    background-color: white;
-    padding: 25px;
-    border-radius: 30px;
-    margin-top: 50px;
-    margin-bottom: 25px;
+form p.choose-email{
+    text-align:center;
 }
-
-.premier_troisieme ul li a {
+form .inputs {
+    display: flex;
+    flex-direction: column;
+}
+form .inputs input[type='email'], input[type='password']{
+    padding: 15px;
+    border:none;
+    border-radius: 5px;
+    background-color:#f2f2f2;
+    outline:none;
+    margin-bottom: 15px;
+}
+form p.inscription{
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #878787;
+}
+form .inscription a{
     text-decoration: none;
-    text-align: center;
-    color: black;
+    color: #F55139;
+}
+form button{
+    padding: 15px 25px;
+    border-radius: 5px;
+    border:none;
+    font-size: 15px;
+    color: #fff;
+    background-color: #1E1F22;
+    outline:none;
+    cursor:pointer;
 }
 
-.premier_troisieme ul li:hover{
+form button:hover{
     background-color: #F55139;
     transition-duration: 0.5s;
 }
-.premier_troisieme ul li:hover a {
-    color: white;
-}
 
-.premier_troisieme #reprise{
-    float: left;
-    margin: 25px;
-    border-radius: 5px;
-}
-
-.premier_troisieme ul{
-    margin: 0px;
-}
-
-.texte{
-    display: block;
-}
-
-
-.decouverte{
-    display: inline-block;
-    padding: 25px;
-}
-
-.decouverte li>a{
-    padding: 25px;
+form a {
     text-decoration: none;
-    color: white;
-
-}
-h2{
-    margin: 0px;
-    padding: 75px 0px 75px 0px;
-}
-/*fin de la premiere ert troisieme section section */
-/*debut de la deuxieme section*/
-
-.premier_troisieme #securite{
-    margin: 30px;
-    float: right ;
-    border-radius: 8px;
-    width: 640px;
 }
 
-.premier_troisieme:nth-child(2){
-    background-color: white;
-    color: black;
+form a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    color: #F55139;
+}
+.bouton{
+    align-items: center;
+    text-align: center;
 }
 
-.premier_troisieme:nth-child(2) li{
-    background-color: black;
-}
-.premier_troisieme:nth-child(2) a{
-    color: white;
-}
 
-/*fin section deux*/
-/*debut section trois*/
-
-
-
-#troisieme li {
-    width: 250px;
-}
 
 /*footer*/
 footer{
-    background-color: black;
+    background-color: black ;
     color: white;
     width: 100%;
     min-height:275px;
+    display: flex;
+    align-items: center;
 }
+
 footer hr{
     color: white;
     background-color: white;
@@ -389,12 +338,6 @@ footer div p>a:hover{
 h2{
     font-family: 'Urbanist', sans-serif;
 }
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
-section p{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 20px;
-}
 
-.formualire a :checked form{
-    display: none;
-}
+
+
