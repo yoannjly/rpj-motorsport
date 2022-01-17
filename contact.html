@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>Formulaire de connexion en HTML & CSS - Frenchcoder</title>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>RPJ Motorsport - Contact</title>
+    <link href="images/logo_footer.png" rel="icon" type="image/jpg">
     <link href="styles/styles_contact.css" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet">
-    <link href="images/logo_footer.png" rel="icon" type="image/jpg">
 </head>
 <body>
 <header>
     <nav>
-        <a href="index.html" target="blank"><img alt="" class="logo_wrap" src="images/logo_footer.png"></a>
+        <a href="index.html"><img alt="" class="logo_wrap" src="images/logo_footer.png"></a>
         <label class="menu_mobile" for="menu_mobile">Menu</label>
         <input class="menu_mobile" id="menu_mobile" name="menu_mobile" role="button" type="checkbox">
         <ul class="menu_principal">
-            <li class="accueil "><a href="index.html">ACCUEIL</a></li>
-            <li class="Moto_club"><a href="moto_club.html">MOTO CLUB</a>
+            <li class="accueil"><a href="index.html">ACCUEIL</a></li>
+            <li class="Moto_club"><a href="">MOTO CLUB</a>
                 <ul class="sous_menu">
                     <li><a href="">AVANTAGE</a></li>
                     <li><a href="">NOTRE ÉQUIPE</a></li>
@@ -27,15 +28,14 @@
                     <li><a href="">JOURNÉE D'ENTRAINEMENT</a></li>
                     <li><a href="">JOURNÉE DE COACHING</a></li>
                     <li><a href="">JOURNÉE SPÉCIALISÉE</a></li>
-                    <li><a href="">CIRCUIT</a></li>
                     <li><a href="">JOURNÉE DE SENSIBILISATION</a></li>
                 </ul>
             </li>
-            <li class="Calendrier"><a href="calendrier.html">CALENDRIER</a></li>
-            <li class="A_propos"><a href="inscription.html">CONNEXION</a>
+            <li class="Calendrier"><a href="">CALENDRIER</a></li>
+            <li class="A_propos"><a href="connexion.html">CONNEXION</a>
                 <ul class="sous_menu">
-                    <li><a href="inscription.html">SE CONNECTER</a></li>
-                    <li><a href="inscription.html">INSCRIPTION</a></li>
+                    <li><a href="connexion.html">SE CONNECTER</a></li>
+                    <li><a href="connexion.html">INSCRIPTION</a></li>
                 </ul>
             </li>
             <li class="connexions"><a href="contact.html">CONTACT</a></li>
@@ -52,24 +52,26 @@
                 <p><i class="fab fa-facebook-f"></i></p>
                 <p><i class="fab fa-twitter"></i></p>
             </div>
-            <p class="choose-email">Entrer vos informations et le motif du contact si dessous :</p>
+            <p class="choose-email">Entrer vos informations et le motif du contact ci-dessous :</p>
 
             <div class="inputs">
-                <label for="email">Email : </label>
+                <label for="email">Email :</label>
                 <input id="email" name="email" placeholder="RPJ.motorsport@gmail.com" type="email">
                 <label for="nom">Nom :</label>
-                <input id="nom" name="nom" placeholder="Nom" type="text">
+                <input id="nom" name="nom" placeholder="Nom" type="text"/>
                 <label for="prenom">Prénom :</label>
                 <input id="prenom" name="prenom" placeholder="Prénom" type="text">
                 <label for="phone">Téléphone :</label>
                 <input id="phone" name="phone" placeholder="+33" type="tel">
                 <label for="motif">Motif :</label>
-                <textarea cols="10" id="motif" name="motif" placeholder="Votre message" rows="10"></textarea>
+                <textarea cols="10" id="motif" name="motif" rows="10"></textarea>
             </div>
             <div class="bouton">
                 <button type="submit">VALIDER</button>
             </div>
         </form>
+    </div>
+    <div class="coordonnées">
     </div>
 </main>
 <footer>
@@ -79,22 +81,17 @@
             <h3>Navigation</h3>
             <hr>
             <p><a href="index.html">Accueil</a></p>
-            <p><a href="moto_club.html">Moto Club</a></p>
+            <p><a href="">Moto Club</a></p>
             <p><a href="prestations.html">Nos prestations</a></p>
-            <p><a href="">Carte cadeau</a>
-            </p>
-            <p><a href="calendrier.html">Calendrier</a></p>
-            <p><a href="">A propos</a></p>
-            <p><a href="inscription.html">Inscription
-            </a></p>
+            <p><a href="">Calendrier</a></p>
+            <p><a href="">À propos</a></p>
+            <p><a href="connexion.html">Connexion</a></p>
+            <p><a href="contact.html">Contact</a></p>
         </div>
         <div id="partenaire">
             <h3>Nos partenaires</h3>
             <hr>
-            <p>
-                <a href="https://www.sport-decouverte.com/stage-de-pilotage-circuit-de-croix-en-ternois.html?gclid=CjwKCAiA78aNBhAlEiwA7B76p9JZxkFKsItP3FiZvefD_iVcliJj_jrO3VPB4JlzRVqalSgiTXwGmhoCbGAQAvD_BwE">Circuit
-                    de Croix-en-Ternois</a>
-            </p>
+            <p><a href="https://www.circuitdecroix.com/">Circuit de Croix-en-Ternois</a></p>
             <p><a href="https://www.circuitpaulricard.com/">Circuit Paul Ricard</a></p>
             <p><a href="https://folembray-arena.fr/">Circuit de Folembray</a></p>
             <p><a href="https://www.lemans.org/">Circuit du Mans</a></p>
@@ -109,7 +106,7 @@
         <div>
             <h3>Nous contacter</h3>
             <hr>
-            <p>TEL : 07 60 40 54 56</p>
+            <p>Téléphone : 07.60.40.54.56</p>
             <p>Email : RPJ.motorsport@gmail.com</p>
             <p>Adresse : 16 Avenue de la Caille</p>
         </div>

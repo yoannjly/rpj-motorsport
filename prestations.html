@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link href="styles/styles.index.css" rel="stylesheet">
-    <title>RPJ-Motorsport</title>
-    <link href="images/logo_footer.png" rel="icon" type="image/jpg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPJ Motorsport - Prestations</title>
+    <link rel="icon" type="image/jpg" href="images/logo_footer.png">
+    <link href="styles/styles_prestations.css" rel="stylesheet">
 </head>
 <body>
 <header>
     <nav>
-        <a href="index.html" target="blank"><img alt="" class="logo_wrap" src="images/logo_footer.png"></a>
+        <a href="index.html"><img alt="" class="logo_wrap" src="images/logo_footer.png"></a>
         <label class="menu_mobile" for="menu_mobile">Menu</label>
         <input class="menu_mobile" id="menu_mobile" name="menu_mobile" role="button" type="checkbox">
         <ul class="menu_principal">
-            <li class="accueil "><a href="index.html">ACCUEIL</a></li>
-            <li class="Moto_club"><a href="moto_club.html">MOTO CLUB</a>
+            <li class="accueil"><a href="index.html">ACCUEIL</a></li>
+            <li class="Moto_club"><a href="">MOTO CLUB</a>
                 <ul class="sous_menu">
                     <li><a href="">AVANTAGE</a></li>
                     <li><a href="">NOTRE ÉQUIPE</a></li>
@@ -27,23 +27,135 @@
                     <li><a href="">JOURNÉE D'ENTRAINEMENT</a></li>
                     <li><a href="">JOURNÉE DE COACHING</a></li>
                     <li><a href="">JOURNÉE SPÉCIALISÉE</a></li>
-                    <li><a href="">CIRCUIT</a></li>
                     <li><a href="">JOURNÉE DE SENSIBILISATION</a></li>
                 </ul>
             </li>
-            <li class="Calendrier"><a href="calendrier.html">CALENDRIER</a></li>
-            <li class="A_propos"><a href="inscription.html">CONNEXION</a>
+            <li class="Calendrier"><a href="">CALENDRIER</a></li>
+            <li class="A_propos"><a href="connexion.html">CONNEXION</a>
                 <ul class="sous_menu">
-                    <li><a href="inscription.html">SE CONNECTER</a></li>
-                    <li><a href="inscription.html">INSCRIPTION</a></li>
+                    <li><a href="connexion.html">SE CONNECTER</a></li>
+                    <li><a href="connexion.html">INSCRIPTION</a></li>
                 </ul>
             </li>
             <li class="connexions"><a href="contact.html">CONTACT</a></li>
         </ul>
     </nav>
+    <div class="banniere">
+        <img alt="" id="banniere" src="images/banniere_presta.jpg">
+    </div>
 </header>
 <main>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <section class="coaching">
+        <div class="images_coach">
+            <img alt="image de coaching" src="images/5-circuits-pour-faire-de-la-moto-sur-piste.jpg">
+        </div>
+        <div class="titre">
+            <h2>JOURNÉE ENTRAINEMENT</h2>
+            <p>A PARTIR DE 89€</p>
+            <h3>VOTRE JOURNÉE COMPREND :</h3>
+            <div class="liste">
+                <ul>
+                    <li>Petit déjeuner</li>
+                    <li>Marshall de piste lors de vos premier tours</li>
+                    <li>Possibilité de demander conseil a nos coach</li>
+                    <li>Repas du midi offert</li>
+                    <li>Montage de pneu gratuit dans nos stand</li>
+                    <li>Accompagnement continue par notre équipe de sécurité</li>
+                    <li>6 sessions de 20 minutes chacune</li>
+                </ul>
+                <div class="inputs">
+                    <div class="categorie">
+                        <select name="categorie">
+                            <datalist id="categorie">
+                                <option disabled selected value="">Choisir votre circuit</option>
+                                <option value="admin">Croix-en-Ternois</option>
+                                <option value="Enseignant">Le Mans</option>
+                                <option value="invite">Folembray</option>
+                                <option value="bordeaux">Circuit Paul Ricard</option>
+                            </datalist>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="coaching">
+        <div class="images_coach">
+            <img alt="image de coaching" src="images/debutant.jpg">
+        </div>
+        <div class="titre">
+            <h2>JOURNÉE DE COACHING</h2>
+            <p>A PARTIR DE 189€</p>
+            <h3>VOTRE JOURNÉE COMPREND :</h3>
+            <div class="liste">
+                <ul>
+                    <li>Petit déjeuner</li>
+                    <li>Marshall de piste lors de vos premier tours</li>
+                    <li>Coach personnel</li>
+                    <li>Apprentissage en groupe des trajectoire</li>
+                    <li>Baptême de moto</li>
+                    <li>Formation de sécurité</li>
+                    <li>Repas du midi offert</li>
+                    <li>Montage de pneu gratuit dans nos stand</li>
+                    <li>Accompagnement continue par notre équipe de sécurité</li>
+                    <li>6 sessions de 20 minutes chacune</li>
+                </ul>
+                <div class="inputs">
+                    <div class="categorie">
+                        <select name="categorie">
+                            <datalist id="categorie">
+                                <option disabled selected value="">Choisir votre circuit</option>
+                                <option value="admin">Croix-en-Ternois</option>
+                                <option value="Enseignant">Le Mans</option>
+                                <option value="invite">Folembray</option>
+                                <option value="bordeaux">Circuit Paul Ricard</option>
+                            </datalist>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="coaching">
+        <div class="images_coach">
+            <img alt="image de coaching" src="images/moto1.jpg">
+        </div>
+        <div class="titre">
+            <h2>JOURNÉE SPÉCIALISÉE</h2>
+            <p>À PARTIR DE 999€</p>
+            <h3>VOTRE JOURNÉE COMPREND :</h3>
+            <div class="liste">
+                <ul>
+                    <li>Petit déjeuner</li>
+                    <li>Repas du midi</li>
+                    <li>Sessions illimité</li>
+                    <li>Marshall de piste lors de vos premier tours</li>
+                    <li>Une équipe de sécurité à votre entière disposition</li>
+                    <li>Aide et conseille des coach</li>
+                    <li>Montage gratuit de vos pneu</li>
+                    <li>Photo de votre journée de roulage offerte</li>
+                </ul>
+                <p>
+                    Nous vous proposons des journées spécialisées, le circuit est réservé pour vous tout au long de la
+                    journée et notre équipe sera à votre disposition du début à la fin. Pour plus de renseignements ou
+                    demande, veuillez nous contacter par email ou par téléphone.
+                </p>
+                <div class="inputs">
+                    <div class="categorie">
+                        <select name="categorie">
+                            <datalist id="categorie">
+                                <option disabled selected value="">Choisir votre circuit</option>
+                                <option value="admin">Croix-en-Ternois</option>
+                                <option value="Enseignant">Le Mans</option>
+                                <option value="invite">Folembray</option>
+                                <option value="bordeaux">Circuit Paul Ricard</option>
+                            </datalist>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 <footer>
     <div class="all-footer">
@@ -52,22 +164,17 @@
             <h3>Navigation</h3>
             <hr>
             <p><a href="index.html">Accueil</a></p>
-            <p><a href="moto_club.html">Moto Club</a></p>
+            <p><a href="">Moto Club</a></p>
             <p><a href="prestations.html">Nos prestations</a></p>
-            <p><a href="">Carte cadeau</a>
-            </p>
-            <p><a href="calendrier.html">Calendrier</a></p>
-            <p><a href="">A propos</a></p>
-            <p><a href="inscription.html">Inscription
-            </a></p>
+            <p><a href="">Calendrier</a></p>
+            <p><a href="">À propos</a></p>
+            <p><a href="connexion.html">Connexion</a></p>
+            <p><a href="contact.html">Contact</a></p>
         </div>
         <div id="partenaire">
             <h3>Nos partenaires</h3>
             <hr>
-            <p>
-                <a href="https://www.sport-decouverte.com/stage-de-pilotage-circuit-de-croix-en-ternois.html?gclid=CjwKCAiA78aNBhAlEiwA7B76p9JZxkFKsItP3FiZvefD_iVcliJj_jrO3VPB4JlzRVqalSgiTXwGmhoCbGAQAvD_BwE">Circuit
-                    de Croix-en-Ternois</a>
-            </p>
+            <p><a href="https://www.circuitdecroix.com/">Circuit de Croix-en-Ternois</a></p>
             <p><a href="https://www.circuitpaulricard.com/">Circuit Paul Ricard</a></p>
             <p><a href="https://folembray-arena.fr/">Circuit de Folembray</a></p>
             <p><a href="https://www.lemans.org/">Circuit du Mans</a></p>
@@ -82,7 +189,7 @@
         <div>
             <h3>Nous contacter</h3>
             <hr>
-            <p>TEL : 07 60 40 54 56</p>
+            <p>Téléphone : 07.60.40.54.56</p>
             <p>Email : RPJ.motorsport@gmail.com</p>
             <p>Adresse : 16 Avenue de la Caille</p>
         </div>

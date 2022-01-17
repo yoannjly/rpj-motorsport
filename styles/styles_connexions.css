@@ -50,9 +50,10 @@ nav li:hover .sous_menu { /*.sous menu apres li hover qui permet de réafficher 
     .menu_mobile {
         display: block;
         color: white;
-        background-color: #1E1F22;
+        background-color: black;
         text-align: end;
-        margin-right: 15px;
+        height: 50px;
+        margin: auto 15px auto auto;
         padding: 15px 0;
         font-size: 20px;
     }
