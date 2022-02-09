@@ -244,17 +244,14 @@ nav a {
 }
 
 @keyframes mesImages {
-    0% {
+    0%,29%,100% {
         transform: translateX(0%);
     }
-    33% {
+    33%,62% {
         transform: translateX(-100%);
     }
-    66% {
+    66%,96% {
         transform: translateX(-200%);
-    }
-    99% {
-        transform: translateX(-0%);
     }
 }
 
